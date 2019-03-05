@@ -35,10 +35,10 @@ import android.app.Application
 import android.content.Context
 
 
-class W00tzeApplication : Application() {
+class EgcodeApplication : Application() {
 
   companion object {
-    private lateinit var instance: W00tzeApplication
+    private lateinit var instance: EgcodeApplication
 
     fun getAppContext(): Context = instance.applicationContext
   }

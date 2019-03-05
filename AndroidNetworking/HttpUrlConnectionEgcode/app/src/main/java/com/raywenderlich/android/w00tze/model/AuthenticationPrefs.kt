@@ -32,7 +32,7 @@
 package com.raywenderlich.android.w00tze.model
 
 import android.preference.PreferenceManager
-import com.raywenderlich.android.w00tze.app.W00tzeApplication
+import com.raywenderlich.android.w00tze.app.EgcodeApplication
 
 
 object AuthenticationPrefs {
@@ -43,7 +43,7 @@ object AuthenticationPrefs {
 
   private const val KEY_USERNAME = "KEY_USERNAME"
 
-  private fun sharedPrefs() = PreferenceManager.getDefaultSharedPreferences(W00tzeApplication.getAppContext())
+  private fun sharedPrefs() = PreferenceManager.getDefaultSharedPreferences(EgcodeApplication.getAppContext())
 
   fun saveAuthToken(token: String) {
     val editor = sharedPrefs().edit()
